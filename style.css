@@ -1,0 +1,134 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    width: 1000px;
+    min-height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.player {
+    background-color: #6FB0CC;
+    width: 500px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 80px 0;
+    color: white;
+}
+
+.player.bdr {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.player.bdr1 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.active {
+    background-color: #87CEEB;
+}
+
+#current-score-0,
+#current-score-1 {
+    background-color: blue;
+    padding: 30px 80px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#current-score-0 span,
+#current-score-1 span {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.player h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#total-score-0,
+#total-score-1 {
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #dfff00;
+}
+
+.btns button {
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid #333;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btns button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.btns button,
+#dice {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dice {
+    display: none;
+}
+
+#dice img {
+    width: 80px;
+}
+
+.btns button:first-child {
+    top: 10%;
+}
+
+#dice {
+    top: 35%;
+}
+
+.btns button:nth-child(3) {
+    top: 64%;
+}
+
+.btns button:nth-child(4) {
+    top: 79%;
+}
